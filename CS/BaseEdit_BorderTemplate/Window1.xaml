@@ -1,0 +1,29 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="BaseEdit_BorderTemplate.Window1" 
+        Title="Customizing Editor's Border"
+        Height="300" Width="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="22" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <dxe:TextEdit Grid.Column="1" Grid.Row="1">
+            <dxe:TextEdit.BorderTemplate>
+                <ControlTemplate TargetType="{x:Type ContentControl}">
+                    <Border BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite"
+                            CornerRadius="2">
+                        <ContentPresenter />
+                    </Border>
+                </ControlTemplate>
+            </dxe:TextEdit.BorderTemplate>
+        </dxe:TextEdit>
+    </Grid>
+</Window>
