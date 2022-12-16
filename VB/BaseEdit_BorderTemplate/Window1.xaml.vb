@@ -1,11 +1,12 @@
-﻿Imports System.Windows
+Imports System.Windows
 
 Namespace BaseEdit_BorderTemplate
-    Partial Public Class Window1
+
+    Public Partial Class Window1
         Inherits Window
 
         Public Sub New()
-            InitializeComponent()
+            Me.InitializeComponent()
         End Sub
     End Class
 End Namespace
